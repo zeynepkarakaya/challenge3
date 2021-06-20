@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Red Planet ITSI v009438</title>
+        <link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+        <link rel="stylesheet" type="text/css" href="styles/search.css">
+        <script src="scripts/search.js" defer></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+        <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css" />
+    </head>
+    <body>
+        <div class="grid_container">
+            <header>
+                <div class="container">
+                    <nav id="navbar">
+                        <div id="shutdown">
+                            <a href="exit.html">Shut Down</a>
+                        </div>
+                        <div id="title">
+                            <a href="index.html" id="programname"> RED PLANET ITSI v.009438</a>
+                        </div>
+                        <div id="help">
+                            <a href="helpusa.html">Help</a>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <p id="locationName">Search for a location</p>
+                <div id="consoleBox">
+                    <div id="welcome">
+                        <p>Maximum number of colonies</p>
+                        <p class="consoleItem">4</p>
+                        <form>
+                                <legend>Get current weather</legend>
+                                <label for="city">City:</label>
+                                <input type="text" name="city" id="city" placeholder="Type here" />
+                                <input type="button" id="searchBtn" value="Search" />
+                        </form>    
+                        <p>Current Weather</p>
+                        <article class="consoleItem" id="weather1"></article>
+                        <p>Current Date & Time</p>
+                        <p class="consoleItem" id="date"></p>
+                        <p class="consoleItem" id="time"></p>
+                        <p>Estimated Time of Arrival</p>
+                        <p class="consoleItem">30 / 12 / 2068</p>
+                        <p class="consoleItem">15:37:25</p>
+                        <div id="eta">
+                            <ul>
+                                <li>Time Left to Landing</li>
+                                <li class="consoleItem" id="countdown"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="locations">
+                        <div id="map1"></div>
+                    </div>    
+                </div>
+
+                <section id="locationButtons">
+
+                <div id="locationSelection">
+                    <p>Check other locations</p>
+                    <a id="usaButton" href="usa.html">
+                        <div class="button">Usa</div>
+                    </a>
+                    <a id="chinaButton" href="china.html">
+                        <div class="button">China</div>
+                    </a>                                         
+                </div>
+                </section>
+
+            </main>
+            <footer>
+                <div class="footer">
+                    <p>mission to Mars 2030, all righst reserved</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
