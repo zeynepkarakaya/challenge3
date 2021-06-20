@@ -13,7 +13,6 @@ html {
 	scroll-behavior: smooth;
 	background-color: #000000;
 	color: #FFFFFF;
-
 }
 
 a {
@@ -33,7 +32,6 @@ body{
 	margin: 0 auto;
 }
 
-
 header{
 	grid-area: header;
 }
@@ -43,7 +41,6 @@ footer {
 	grid-area: footer;
 	align-items: center;
 }
-
 
 /* NavBar */
 

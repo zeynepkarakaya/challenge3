@@ -2,12 +2,6 @@
 /*Page Container*/
 
 .grid-container {
-	display: grid;
-	grid-template-areas: 
-	'header header header'
-	'welcome welcome welcome'
-	'locations locations locations'
-	'footer footer footer';
 	justify-content: space-between;
 	align-content: center;
 	grid-gap: 5px;
@@ -16,17 +10,14 @@
 
 #consoleBox {
 	display: flex;
-/*	grid-gap: 30vw;*/
 	justify-content: space-between;
 	margin: 1vh 15vw;
 }
 
-#welcome {
-	grid-area: welcome;
+#leftBox {
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-/*	margin: 1vh 20vw;*/
 	text-align: center;
 	line-height: 2rem;
 /*	font-size: 1.5rem;*/
@@ -41,7 +32,6 @@
 }
 
 #locations {
-	grid-area: locations;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -51,15 +41,15 @@
 	grid-gap: 50px;
 }
 
-#map1 {
+#mapChina {
 	align-content: center;
 	align-self: center;
-  height: 500px;
-  width: 500px;
+	height: 450px;
+	width: 450px;
 }
 
 
-#weather1 {
+#weatherChina {
 	text-align: center;
 }
 
@@ -70,40 +60,40 @@
 }
 
 
- /*location buttons*/
-
-#locationButtons {
-	display: block;
-	margin: 5vh 30vw;
-}
+ /*other location buttons*/
 
 #locationSelection {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	align-content: center;
 	grid-gap: 1rem;
-
+	margin: 8vh 30vw;
 }
 
 .button {
 	background-color: #FFFFFF;
-	width: 100px;
-	height: 30px;
+	width: 120px;
+	height: 40px;
 	color: #000000;
-/*	padding: 2rem;*/
-/*	padding-top: 1.25rem;
-	padding-bottom: 2rem;*/
+	padding-top: 1rem;
+/*	padding-bottom: 2rem;*/
 	text-align: center;
-	border-radius: 15px;
+	border-radius: 5px;
 /*	margin: 5vh 30vw;*/
 	font-size: 1.5rem;
 	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
 }
+
+.button p {
+	margin-top: 5px;
+}
+
 .button a {
 	size: 100;
 }
-
 
 .button a p {
 	color: #000000;
@@ -112,72 +102,3 @@
 .button:hover {
 	opacity: 0.7;
 }
-
-/* Form Section */
-
-#form {
-	grid-area: form;
-}
-
-.form-label {
-	padding: 0.25rem 0;
-	padding-bottom: 3rem;
-}
-
-form {
-	color: #000000;
-	background-color: #FFFFFF;
-	padding: 4rem;
-	padding-top: 1.25rem;
-	padding-bottom: 2rem;
-	text-align: center;
-/*	border-radius: 15px;*/
-	margin: 5vh 30vw 2.8vh 30vw;
-}
-
-input[type="text"] {
-	min-height: 15px;
-	border-radius: 5px;
-	border:1px solid #cccccc;
-}
-
-input[type="password"] {
-	min-height: 15px;
-	border-radius: 5px;
-	border:1px solid #cccccc;
-}
-
-/*.button {
-	width: 100px;
-	height: 50px;
-	text-align: center;
-	background: #fff;
-	border-radius: 5px;
-	cursor: pointer;
-}*/
-
-button {
-	font-family: BankGothic;
-}
-
-.button:hover {
-	opacity: 0.8;
-}
-
-.button.hover {
-	opacity: 0.5;
-}
-
-.form-label label{
-	display: block;
-	line-height: 2rem;
-}
-
-.form-input {
-	width: 50%;
-	padding: 0.4rem;
-	font-size: 1rem;
-	resize: none;
-	border-radius: 5px;
-}
-

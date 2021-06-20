@@ -2,12 +2,6 @@
 /*Page Container*/
 
 .grid-container {
-	display: grid;
-	grid-template-areas: 
-	'header header header'
-	'welcome welcome welcome'
-	'locations locations locations'
-	'footer footer footer';
 	justify-content: space-between;
 	align-content: center;
 	grid-gap: 5px;
@@ -16,32 +10,28 @@
 
 #consoleBox {
 	display: flex;
-/*	grid-gap: 30vw;*/
 	justify-content: space-between;
 	margin: 1vh 15vw;
 }
 
-#welcome {
-	grid-area: welcome;
+#leftBox {
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-/*	margin: 1vh 20vw;*/
 	text-align: center;
 	line-height: 2rem;
 /*	font-size: 1.5rem;*/
 	padding: 1rem;
 }
 
-#locationName {
-	font-size: 1.5rem;
+.searchTitle {
+	font-size: 1.25rem;
 	align-self: center;
 	text-align: center;
-	margin-bottom: 5vh;
+	margin-bottom: 3vh;
 }
 
 #locations {
-	grid-area: locations;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -51,26 +41,23 @@
 	grid-gap: 50px;
 }
 
-#map1 {
+#searchMap {
 	align-content: center;
 	align-self: center;
-  height: 500px;
-  width: 500px;
+	height: 450px;
+	width: 450px;
 }
 
-
-#weather1 {
+#searchWeather {
 	text-align: center;
 }
 
-
 .consoleItem {
 	color: #FF0000;
-  font-size: 20px;
+	font-size: 20px;
 }
 
-
- /*location buttons*/
+ /*other location buttons*/
 
 #locationSelection {
 	display: flex;
@@ -105,7 +92,6 @@
 	size: 100;
 }
 
-
 .button a p {
 	color: #000000;
 }
@@ -114,23 +100,7 @@
 	opacity: 0.7;
 }
 
-/* Form Section */
-
-/*#form {
-	grid-area: form;
-}
-
-.form-label {
-	padding: 0.25rem 0;
-	padding-bottom: 3rem;
-}*/
-
-/*form {
-	color: #000000;
-	background-color: #FFFFFF;
-	text-align: center;
-	border-radius: 15px;
-}*/
+/* Weather Form Section */
 
 #city {
 	height: 30px;
@@ -155,19 +125,3 @@
 #searchBtn:hover {
 	opacity: 0.8;
 }
-
-
-/*
-.form-label label{
-	display: block;
-	line-height: 2rem;
-}
-
-.form-input {
-	width: 50%;
-	padding: 0.4rem;
-	font-size: 1rem;
-	resize: none;
-	border-radius: 5px;
-}
-*/

@@ -23,29 +23,30 @@
                             <a href="index.html" id="programname"> RED PLANET ITSI v.009438</a>
                         </div>
                         <div id="help">
-                            <a href="helpusa.html">Help</a>
+                            <a href="helpsearch.html">Help</a>
                         </div>
                     </nav>
                 </div>
             </header>
             <main>
-                <p id="locationName">Search for a location</p>
+                <p class="searchTitle">Search for a location</p>
+                <p class="searchTitle">Below type a city name on left and map to check the details of landing</p>
                 <div id="consoleBox">
-                    <div id="welcome">
+                    <div id="leftBox">
                         <p>Maximum number of colonies</p>
                         <p class="consoleItem">4</p>
                         <form>
-                                <legend>Get current weather</legend>
+                                <legend>Check wheather of the planned location</legend>
                                 <label for="city">City:</label>
                                 <input type="text" name="city" id="city" placeholder="Type here" />
                                 <input type="button" id="searchBtn" value="Search" />
                         </form>    
                         <p>Current Weather</p>
-                        <article class="consoleItem" id="weather1"></article>
-                        <p>Current Date & Time</p>
+                        <article class="consoleItem" id="searchWeather"></article>
+                        <p>Current Date & Time (GMT)</p>
                         <p class="consoleItem" id="date"></p>
                         <p class="consoleItem" id="time"></p>
-                        <p>Estimated Time of Arrival</p>
+                        <p>Estimated Time of Arrival (GMT)</p>
                         <p class="consoleItem">30 / 12 / 2068</p>
                         <p class="consoleItem">15:37:25</p>
                         <div id="eta">
@@ -56,12 +57,11 @@
                         </div>
                     </div>
                     <div id="locations">
-                        <div id="map1"></div>
+                        <div id="searchMap"></div>
                     </div>    
                 </div>
 
                 <section id="locationButtons">
-
                 <div id="locationSelection">
                     <p>Check other locations</p>
                     <a id="usaButton" href="usa.html">
@@ -76,7 +76,7 @@
             </main>
             <footer>
                 <div class="footer">
-                    <p>mission to Mars 2030, all righst reserved</p>
+                    <p>mission to Mars 2068, all rights reserved</p>
                 </div>
             </footer>
         </div>

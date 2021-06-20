@@ -1,14 +1,6 @@
-
-
 /*Page Container*/
 
 .grid-container {
-	display: grid;
-	grid-template-areas: 
-	'header header header'
-	'welcome welcome welcome'
-	'form form form'
-	'footer footer footer';
 	justify-content: space-between;
 	align-content: center;
 	grid-gap: 5px;
@@ -16,20 +8,19 @@
 }
 
 #info {
-	grid-area: welcome;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
 	margin: 1vh 20vw 4.75vh 20vw;
 	text-align: center;
-	line-height: 2.5rem;
-	font-size: 1.5rem;
+	line-height: 3rem;
+	font-size: 2rem;
 	padding: 1rem;
 }
 
 #note {
-	font-size: 1rem;
-	line-height: 1.5rem;
+	font-size: 1.5rem;
+	line-height: 2rem;
 	color: orangered;
 }
 
@@ -42,7 +33,7 @@
 	text-align: center;
 	border-radius: 15px;
 	margin: 5vh 30vw;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	cursor: pointer;
 }
 
@@ -58,23 +49,20 @@
 	display: none;
 }
 
-
-
-
  /*location buttons*/
 
 #locations {
 	display: block;
-	margin: 5vh 30vw;
+	margin: 5vh 40vw;
 }
 
 #locationSelection {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
 	grid-gap: 1rem;
-
 }
 
 #usa {
@@ -83,20 +71,18 @@
 	height: 50px;
 	color: #000000;
 	padding: 2rem;
-/*	padding-top: 1.25rem;
-	padding-bottom: 2rem;*/
+	padding-top: 2.25rem;
 	text-align: center;
 	border-radius: 15px;
 /*	margin: 5vh 30vw;*/
-	font-size: 2rem;
+	font-size: 2.5rem;
 	cursor: pointer;
 }
-#usa a {
+#usaButton {
 	size: 100;
 }
 
-
-#usa a p {
+#usaButton p {
 	color: #000000;
 }
 
@@ -104,29 +90,24 @@
 	opacity: 0.7;
 }
 
-/*#usa h2 {
-	display: inline-block;
-}*/
 #china {
 	background-color: #FFFFFF;
 	width: 200px;
 	height: 50px;
 	color: #000000;
 	padding: 2rem;
-/*	padding-top: 1.25rem;
-	padding-bottom: 2rem;*/
+	padding-top: 2.25rem;
 	text-align: center;
 	border-radius: 15px;
 /*	margin: 5vh 30vw;*/
-	font-size: 2rem;
+	font-size: 2.5rem;
 	cursor: pointer;
 }
-#china a {
+#chinaButton {
 	size: 100;
 }
 
-
-#china a p {
+#chinaButton p {
 	color: #000000;
 }
 
@@ -140,20 +121,19 @@
 	height: 50px;
 	color: #000000;
 	padding: 2rem;
-/*	padding-top: 1.25rem;
-	padding-bottom: 2rem;*/
+	padding-top: 2.25rem;
 	text-align: center;
 	border-radius: 15px;
 /*	margin: 5vh 30vw;*/
-	font-size: 2rem;
+	font-size: 2.5rem;
 	cursor: pointer;
 }
-#search a {
+
+#searchButton {
 	size: 100;
 }
 
-
-#search a p {
+#searchButton p {
 	color: #000000;
 }
 
